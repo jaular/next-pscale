@@ -4,7 +4,9 @@ import Container from "@/components/Container";
 import Banner from "@/components/Banner";
 import UserForm from "@/components/UserForm";
 import Users from "@/components/Users";
-import prisma from "@/lib/prisma";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export default function Home({ data }) {
   const router = useRouter();

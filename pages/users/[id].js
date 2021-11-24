@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Container from "@/components/Container";
-import prisma from "@/lib/prisma";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export default function User({ data }) {
   return (
