@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Footer from "./Footer";
 
 export default function Container(props) {
   const { children, navigation, ...customMeta } = props;
@@ -46,6 +47,7 @@ export default function Container(props) {
       <main className="container flex-grow max-w-5xl px-6 mx-auto my-14 lg:px-8 md:my-16">
         {children}
       </main>
+      <Footer />
     </>
   );
 }
